@@ -1,5 +1,4 @@
 /* Custom styles for FinanceFlow website */
-
 /* RTL Support */
 [dir="rtl"] {
     direction: rtl;
@@ -10,7 +9,7 @@
 }
 
 [dir="rtl"] .flex {
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
 }
 
 [dir="rtl"] .space-x-3 > * + * {

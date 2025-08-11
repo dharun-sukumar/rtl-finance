@@ -29,17 +29,17 @@
     <!-- Navigation -->
     <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
         <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <!-- Logo -->
-                <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                        <span class="text-white font-bold text-xl">F</span>
-                    </div>
-                    <span class="text-2xl font-bold text-primary">FinanceFlow</span>
+            <div id="navbarFlex" class="flex justify-between items-center py-4 flex-row">
+                <!-- RTL Toggle and Login -->
+                <div class="hidden lg:flex items-center space-x-4 rtl:space-x-reverse order-3 rtl:order-1">
+                    <button id="rtlToggle" class="px-3 py-2 text-sm bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors">
+                        <span id="rtlText">RTL</span>
+                    </button>
+                    <a href="login.html" class="bg-primary mr-16 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">Login</a>
                 </div>
 
                 <!-- Desktop Menu -->
-                <div class="hidden lg:flex items-center space-x-8">
+                <div id="navbarLinks" class="hidden lg:flex items-center space-x-8 rtl:space-x-reverse order-2 text-left rtl:text-right rtl:order-2">
                     <!-- Home Dropdown -->
                     <div class="relative group">
                         <button class="flex items-center space-x-1 ml-6 text-gray-700 hover:text-primary transition-colors">
@@ -56,7 +56,6 @@
                     <a href="about.html" class="text-gray-700 hover:text-primary transition-colors">About</a>
                     <a href="services.html" class="text-gray-700 hover:text-primary transition-colors">Services</a>
                     <a href="pricing.html" class="text-gray-700 hover:text-primary transition-colors">Pricing</a>
-                    
                     <!-- Dashboard Dropdown -->
                     <div class="relative group">
                         <button class="flex items-center space-x-1 text-gray-700 hover:text-primary transition-colors">
@@ -73,12 +72,12 @@
                     <a href="contact.html" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
                 </div>
 
-                <!-- RTL Toggle and Login -->
-                <div class="hidden lg:flex items-center space-x-4">
-                    <button id="rtlToggle" class="px-3 py-2 text-sm bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors">
-                        <span id="rtlText">RTL</span>
-                    </button>
-                    <a href="login.html" class="bg-primary mr-16 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">Login</a>
+                <!-- Logo -->
+                <div id="navbarLogo" class="flex items-center space-x-3 rtl:space-x-reverse order-1 rtl:order-3">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">F</span>
+                    </div>
+                    <span class="text-2xl font-bold text-primary">FinanceFlow</span>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -90,7 +89,7 @@
             </div>
 
             <!-- Mobile Menu -->
-            <div class="lg:hidden hidden" id="mobileMenu">
+            <div class="lg:hidden hidden h-[100vh]" id="mobileMenu">
                 <div class="py-4 border-t">
                     <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Home 1</a>
                     <a href="index2.html" class="block py-2 text-gray-700 hover:text-primary">Home 2</a>
@@ -113,14 +112,14 @@
     <section class="bg-gradient-to-br from-primary to-blue-800 text-white pt-24 pb-16">
         <div class="container mx-auto px-4">
             <div class="flex flex-col lg:flex-row items-center" style="">
-                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 order-1 p-8 rtl:order-2">
                     <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                         Professional <span class="text-accent">Finance</span> Solutions
                     </h1>
                     <p class="text-xl mb-8 text-blue-100">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
+                    <div class="flex flex-col sm:flex-row gap-4 rtl:flex-end rtl:float-right">
                         <a href="services.html" class="bg-accent text-white px-8 py-4 rounded-lg hover:bg-amber-600 transition-colors text-center font-semibold">
                             Our Services
                         </a>
@@ -129,7 +128,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="lg:w-1/2">
+                <div class="lg:w-1/2 order-2 rtl:order-1">
                     <img src="https://images.pexels.com/photos/3483098/pexels-photo-3483098.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Financial Planning" class="rounded-lg shadow-2xl">
                 </div>
             </div>

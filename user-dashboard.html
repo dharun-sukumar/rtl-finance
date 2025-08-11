@@ -43,15 +43,8 @@
 
                 <!-- Header Actions -->
                 <div class="flex items-center space-x-4">
-                    <button id="rtlToggle" class="px-3 py-2 text-sm bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors">
-                        <span id="rtlText">RTL</span>
-                    </button>
-                    <button class="relative p-2 text-gray-600 hover:text-primary transition-colors">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5-5-5 5h5zM15 17V7a3 3 0 00-3-3H6a3 3 0 00-3 3v10a3 3 0 003 3h6a3 3 0 003-3z"></path>
-                        </svg>
-                        <span class="absolute top-0 right-0 w-3 h-3 bg-blue-500 rounded-full"></span>
-                    </button>
+
+                    
                     <div class="relative group">
                         <button class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-100 transition-colors">
                             <img src="https://images.pexels.com/photos/3671083/pexels-photo-3671083.jpeg?auto=compress&cs=tinysrgb&w=100" alt="User" class="w-8 h-8 rounded-full">
@@ -71,6 +64,9 @@
                             <a href="login.html" class="block px-4 py-2 text-red-600 hover:bg-red-50">Logout</a>
                         </div>
                     </div>
+                                        <button id="rtlToggle" class="px-3 py-2 text-sm bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors">
+                        <span id="rtlText">RTL</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -79,7 +75,7 @@
     <!-- Dashboard Layout -->
     <div class="pt-16 flex">
         <!-- Sidebar -->
-        <aside class="w-64 bg-white shadow-lg h-screen sticky top-16 overflow-y-auto">
+        <aside class=" hidden md:blockbg-white shadow-lg h-screen sticky top-16 overflow-y-auto">
             <div class="p-6">
                 <nav class="space-y-2">
                     <a href="#" class="flex items-center space-x-3 px-4 py-3 bg-primary text-white rounded-lg">
