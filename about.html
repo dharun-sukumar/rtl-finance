@@ -26,14 +26,17 @@
 </head>
 <body class="font-inter bg-white text-gray-800" id="body">
 
-      <!-- Navigation -->
+   <!-- Navigation -->
     <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
         <div class="container mx-auto px-4">
             <div id="navbarFlex" class="flex justify-between items-center py-4 flex-row">
                 <!-- RTL Toggle and Login -->
                 <div class="hidden lg:flex items-center space-x-4 rtl:space-x-reverse order-3 rtl:order-1">
-                    <button id="rtlToggle" class="px-3 py-2 text-sm bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors">
-                        <span id="rtlText">RTL</span>
+                    <button id="rtlToggle" class="px-3 py-2 text-sm bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors flex items-center justify-center" aria-label="Toggle RTL">
+                        <svg id="rtlGlobeDesktop" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
                     </button>
                     <a href="login.html" class="bg-primary mr-16 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">Login</a>
                 </div>
@@ -99,15 +102,20 @@
                     <a href="admin-dashboard.html" class="block py-2 text-gray-700 hover:text-primary">Admin Dashboard</a>
                     <a href="user-dashboard.html" class="block py-2 text-gray-700 hover:text-primary">User Dashboard</a>
                     <a href="contact.html" class="block py-2 text-gray-700 hover:text-primary">Contact</a>
-                    <div class="flex items-center space-x-4 pt-4">
-                        <button id="rtlToggleMobile" class="px-3 py-2 text-sm bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors">RTL</button>
+                    <div class="flex items-center gap-4 pt-4">
+                        <button id="rtlToggleMobile" class="px-3 py-2 text-sm bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors flex items-center justify-center" aria-label="Toggle RTL">
+                            <svg id="rtlGlobeMobile" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </button>
                         <a href="login.html" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">Login</a>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
-
+    
     <!-- Page Header -->
     <section class="bg-gray-50 pt-24 pb-16">
         <div class="container mx-auto px-4">
@@ -272,7 +280,7 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
-                    <div class="flex items-center space-x-3 mb-6">
+                    <div class="flex items-center gap-3 mb-6">
                         <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
                             <span class="text-white font-bold text-xl">F</span>
                         </div>
